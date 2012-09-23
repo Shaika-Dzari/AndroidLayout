@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:orientation="vertical"
+    		  android:padding="5dp"
+    		  android:layout_width="match_parent"
+    		  android:layout_height="match_parent">
+    	
+    <!-- Top Layout -->	  
+    <LinearLayout android:orientation="horizontal"
+        		  android:layout_width="fill_parent"
+        		  android:layout_height="wrap_content">
+        		  
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:hint="@string/edit_search_hint" />
+        <!-- 
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/btn_search_text" 
+            style="?android:attr/borderlessButtonStyle" />
+         -->
+         <Button
+            android:id="@+id/btn_search"
+            android:text="@string/btn_search_text" 
+            style="@style/myButton" />
+         
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        		  android:paddingTop="5dp"
+        		  android:layout_width="fill_parent"
+        		  android:layout_height="fill_parent">
+        
+        <ListView android:id="@+id/lst_bang"
+            	  android:layout_weight="1"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="fill_parent"
+            	  android:layout_marginRight="5dp" />
+        
+        <ListView android:id="@+id/lst_history"
+            	  android:layout_weight="1"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="fill_parent"
+            	  android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    
+</LinearLayout>
+ 
